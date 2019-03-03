@@ -8,6 +8,7 @@ public class FirstController {
 
 	@GetMapping("index")
 	public String index() {
+		
 		return "wcg love jiajia";
 	}
 	
