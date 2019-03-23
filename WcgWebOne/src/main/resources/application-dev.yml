@@ -5,10 +5,21 @@ server:
   tomcat.max-threads: 0  
   tomcat.uri-encoding: UTF-8  
   
-spring: 
-#数据库配置 
-  datasource:  
-    url: jdbc:mysql://localhost:3306/wcgfirst  
+spring:
+  #数据源配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/wcgfirst?serverTimezone=GMT%2B8
     username : root  
     password : root  
-    driverClassName : com.mysql.jdbc.Driver  
+    driverClassName : com.mysql.cj.jdbc.Driver 
+    
+    logging:
+  level: 
+    learning: trace
+
+mybatis:
+  #实体类所做包
+  type-aliases-package: learning.model
+  #mapper.xml所在位置
+  mapper-locations: classpath:mapper/*.xml
+
