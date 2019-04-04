@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class HtmlController {
     @RequestMapping("/hello")
     public String helloHtml(HashMap<String, Object> map, Model model) {
-        model.addAttribute("say","欢迎欢迎,热烈欢迎");
+        model.addAttribute("say", "欢迎欢迎,热烈欢迎");
         map.put("hello", "欢迎进入HTML页面");
         return "index";
     }
