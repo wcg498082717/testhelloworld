@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 //@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class WcgWebOneApplication {
 	public static void main(String[] args) {
-		int a=1;
 		SpringApplication.run(WcgWebOneApplication.class, args);
 	}
 
