@@ -1,7 +1,7 @@
 
 spring:
   profiles:
-    active: dev
+    active: pro
    #模板配置
   thymeleaf:
     prefix: classpath:/templates/
