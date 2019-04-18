@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.wcg.webone.first.domain.Usr;
+
 @Mapper
 public interface UsrMapper {
     int deleteByPrimaryKey(Integer id);
