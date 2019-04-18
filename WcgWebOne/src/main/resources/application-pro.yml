@@ -12,10 +12,13 @@ spring:
     username : root
     password : wcg498082717
     driverClassName : com.mysql.cj.jdbc.Driver
-
     logging:
   level:
     learning: trace
+  thymeleaf:
+    prefix: classpath:/templates/
+  mvc:
+    static-path-pattern: /static/**
 
 mybatis:
   #实体类所做包

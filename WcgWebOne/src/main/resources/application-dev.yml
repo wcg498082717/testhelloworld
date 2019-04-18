@@ -9,14 +9,16 @@ spring:
   #数据源配置
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/wcgfirst?serverTimezone=GMT%2B8
-    username : root  
+    username : root
     password : root  
     driverClassName : com.mysql.cj.jdbc.Driver 
-    
     logging:
-  level: 
+  level:
     learning: trace
-
+  thymeleaf:
+    prefix: classpath:/templates/
+  mvc:
+    static-path-pattern: /static/**
 mybatis:
   #实体类所做包
   type-aliases-package: learning.model
