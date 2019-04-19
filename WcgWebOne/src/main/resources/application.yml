@@ -6,7 +6,7 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
-    mode: HTML5
+    mode: HTML
     encoding: UTF-8
 #热部署配置无缓存
     cache: false
@@ -20,4 +20,5 @@ spring:
           - /**
   mvc:
     static-path-pattern: /static/**
-        
+
+
