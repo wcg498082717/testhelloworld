@@ -38,6 +38,11 @@
 		
 
 		<!-- mysql驱动 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<!-- mybatis -->
 		 <dependency>
 		 	<groupId>org.mybatis.spring.boot</groupId>
@@ -50,10 +55,6 @@
          	<groupId>com.alibaba</groupId>
          	<artifactId>druid</artifactId>
          	<version>1.0.28</version>
-         </dependency>
-         <dependency>
-         	<groupId>mysql</groupId>
-         	<artifactId>mysql-connector-java</artifactId>
          </dependency>
 		<!--网页支持-->
          <dependency>
