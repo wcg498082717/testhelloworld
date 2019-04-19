@@ -6,12 +6,17 @@ server:
   tomcat.uri-encoding: UTF-8
 
 spring:
+
   #数据源配置
   datasource:
+#    url: jdbc:mysql://139.159.157.120:3306/wcgfirst?serverTimezone=GMT%2B8
+#    username : root
+#    password : wcg498082717
+#    driverClassName : com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://139.159.157.120:3306/wcgfirst?serverTimezone=GMT%2B8
-    username : root
-    password : wcg498082717
-    driverClassName : com.mysql.cj.jdbc.Driver
+    username: root
+    password: wcg498082717
+    driver-class-name: com.mysql.jdbc.Driver
 
     logging:
   level:
