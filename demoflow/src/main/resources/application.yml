@@ -1,0 +1,24 @@
+
+spring:
+  profiles:
+    active: test
+   #模板配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+#热部署配置无缓存
+    cache: false
+#及时更新
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths:
+          - /**
+  mvc:
+    static-path-pattern: /static/**
+
+
